@@ -1,4 +1,5 @@
-const BP_INDEX_URL = "https://Macrostrata.github.io/blueprints/index.json";
+const GITHUB_ORG = 'Macrostrata';
+const BP_INDEX_URL = `https://${GITHUB_ORG}.github.io/${GITHUB_ORG}/blueprints/index.json`;
 
 fetch(BP_INDEX_URL, { method: 'GET' })
 .then((response) => {

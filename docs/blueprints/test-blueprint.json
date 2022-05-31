@@ -1,0 +1,260 @@
+{
+    "success": [
+      {
+        "id": "content_10",
+        "level": "error",
+        "description": "The index.md should have a  '## Additional resources' section containing the project files section.  This section should include any additional links that will be useful for the blueprint.",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 193,
+            "lineCount": 1,
+            "lineContent": "## Additional resources"
+          }
+        ]
+      },
+      {
+        "id": "link_0",
+        "level": "error",
+        "description": "Image links in the README.md file should point to a valid image file.",
+        "fileHighlights": [
+          {
+            "path": "README-draft",
+            "lineNumber": 5,
+            "lineCount": 1,
+            "lineContent": "![GCSDK_Angular](blueprint/images/overview.png \"Develop an Angular app that uses the Genesys Cloud Platform SDK\")"
+          }
+        ]
+      },
+      {
+        "id": "content_6",
+        "level": "error",
+        "description": "The index.md file must have a '## Prerequisites' section that describes the skillset and technical requirements an individual must have to successfully install the blueprint.",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 33,
+            "lineCount": 1,
+            "lineContent": "## Prerequisites"
+          }
+        ]
+      },
+      {
+        "id": "content_4",
+        "level": "error",
+        "description": "The index.md must have a '## Solution' section describing how blueprint solves the project.",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 24,
+            "lineCount": 1,
+            "lineContent": "## Solution"
+          }
+        ]
+      },
+      {
+        "id": "content_5",
+        "level": "error",
+        "description": "The index.md must have a '## Content' section linking to the rest of the document.",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 16,
+            "lineCount": 1,
+            "lineContent": "## Content"
+          }
+        ]
+      },
+      {
+        "id": "content_8",
+        "level": "error",
+        "description": "The index.md file should have a '## Implementation steps' section that enumerates the steps necessary to carry out the blueprint implementation.",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 111,
+            "lineCount": 1,
+            "lineContent": "## Implementation steps"
+          }
+        ]
+      },
+      {
+        "id": "content_7",
+        "level": "error",
+        "description": "The index.md file should have '### Specialized knowledge' section that enumerates the skill sets that the implementor should possess in order to carry out the blueprint.",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 35,
+            "lineCount": 1,
+            "lineContent": "### Specialized knowledge"
+          }
+        ]
+      },
+      {
+        "id": "content_2",
+        "level": "error",
+        "description": "The index.md file's front matter must include the following fields: title, author, indextype, icon, image, category, and summary",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 2,
+            "lineCount": 1,
+            "lineContent": "title: Develop a Vue App that provides basic agent monitoring functionality"
+          },
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 3,
+            "lineCount": 1,
+            "lineContent": "author: prince.merluza"
+          },
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 4,
+            "lineCount": 1,
+            "lineContent": "indextype: blueprint"
+          },
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 5,
+            "lineCount": 1,
+            "lineContent": "icon: blueprint"
+          },
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 6,
+            "lineCount": 1,
+            "lineContent": "image: images/cover.png"
+          },
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 7,
+            "lineCount": 1,
+            "lineContent": "category: 6"
+          },
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 8,
+            "lineCount": 1,
+            "lineContent": "summary: |"
+          }
+        ]
+      },
+      {
+        "id": "struct_3",
+        "level": "error",
+        "description": "Every Genesys Cloud blueprint should have a overview.png file that contains a high-level architecture diagram for the blueprint."
+      },
+      {
+        "id": "struct_1",
+        "level": "error",
+        "description": "Every Genesys Cloud blueprint should have a blueprint directory at the root of the project.  This directory should hold all assets associated with the blueprint."
+      },
+      {
+        "id": "link_2",
+        "level": "error",
+        "description": "Image links in the README.md file is missing alternative text.",
+        "fileHighlights": []
+      },
+      {
+        "id": "struct_2",
+        "level": "error",
+        "description": "Every Genesys Cloud blueprint should have a blueprint/images directory that will contain all of the image assets for a project."
+      },
+      {
+        "id": "content_0",
+        "level": "error",
+        "description": "Overview image should be referred to in README.MD",
+        "fileHighlights": [
+          {
+            "path": "README-draft",
+            "lineNumber": 5,
+            "lineCount": 1,
+            "lineContent": "![GCSDK_Angular](blueprint/images/overview.png \"Develop an Angular app that uses the Genesys Cloud Platform SDK\")"
+          }
+        ]
+      },
+      {
+        "id": "content_1",
+        "level": "error",
+        "description": "The front matter must be defined in the file or the blueprint will not appear in the Developer Center",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 1,
+            "lineCount": 10,
+            "lineContent": "---\ntitle: Develop a Vue App that provides basic agent monitoring functionality\nauthor: prince.merluza\nindextype: blueprint\nicon: blueprint\nimage: images/cover.png\ncategory: 6\nsummary: |\n  This Genesys Cloud Developer Blueprint demonstrates how to to include the Genesys Cloud Javascript Platform SDK in a Vue project. The blueprint includes a sample Vue project that uses the Genesys Cloud API for basic supervisor functionality of monitoring agent statuses.\n---"
+          }
+        ]
+      },
+      {
+        "id": "link_3",
+        "level": "error",
+        "description": "Image links in the index.md file is missing alternative text.",
+        "fileHighlights": []
+      },
+      {
+        "id": "link_5",
+        "level": "error",
+        "description": "Hyperlinks in the index.md file is missing alternative text.",
+        "fileHighlights": []
+      }
+    ],
+    "failed": [
+      {
+        "id": "link_4",
+        "level": "error",
+        "description": "Hyperlinks in the README.md file is missing alternative text.",
+        "fileHighlights": [
+          {
+            "path": "README-draft",
+            "lineNumber": 3,
+            "lineCount": 1,
+            "lineContent": "View the full [Develop a Vue App that provides basic agent monitoring functionality](https://developer.mypurecloud.com/blueprints/agent-monitoring-app) article on the Genesys Cloud Developer Center."
+          }
+        ]
+      },
+      {
+        "id": "link_1",
+        "level": "error",
+        "description": "Image links in index.md file should point to a valid image file.",
+        "fileHighlights": [
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 14,
+            "lineCount": 1,
+            "lineContent": "![Flowchart](images/flowchart.png \"Develop a Vue app that uses the Genesys Cloud Platform SDK\")"
+          },
+          {
+            "path": "blueprint/index-draft",
+            "lineNumber": 56,
+            "lineCount": 1,
+            "lineContent": "![Sample App screenshot](images/screenshot-1.png \"Sample page showing agent details\")"
+          }
+        ]
+      },
+      {
+        "id": "content_3",
+        "level": "error",
+        "description": "The index.md must have a '## Scenario' section describing the problem the blueprint is trying to solve.",
+        "fileHighlights": []
+      },
+      {
+        "id": "struct_0",
+        "level": "error",
+        "description": "All Genesys Cloud blueprints must include a README.MD file.  This file should contain a brief introduction of the blueprint."
+      },
+      {
+        "id": "struct_4",
+        "level": "error",
+        "description": "Every Genesys Cloud blueprint should have a blueprint/index.md that contains a complete writeup in Markdown of the blueprint."
+      },
+      {
+        "id": "content_9",
+        "level": "error",
+        "description": "The index.md file should have a '### Download the repository containing the project files' section that describe how to clone the blueprint repository from GitHub.",
+        "fileHighlights": []
+      }
+    ]
+  }
+  

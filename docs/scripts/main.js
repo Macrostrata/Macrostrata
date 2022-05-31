@@ -23,3 +23,5 @@ function getBlueprints() {
       console.log(resultsArr);
     });
 }
+
+getBlueprints();

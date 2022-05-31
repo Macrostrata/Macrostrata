@@ -1,9 +1,9 @@
-name: Remote Dispatch Action Responder
+name: Receive Results
 
 on: [repository_dispatch]
 
 jobs:
-  ping-pong:
+  receive-resutls:
     runs-on: ubuntu-latest
     steps:
       - name: Event Information

@@ -9,3 +9,4 @@ jobs:
       - name: Event Information
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
+          echo "Content: '${{ github.event.client_payload.result }}'"

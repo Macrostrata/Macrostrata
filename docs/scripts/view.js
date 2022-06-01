@@ -45,7 +45,7 @@ function showBlueprintResult(blueprintResult){
   });
 
   // Add timestamp
-  timestampEl.innerText = blueprintResult.timestamp;
+  timestampEl.innerText = DateTime.fromISO(blueprintResult.timestamp).toLocaleString() ;
 }
 
 export default {

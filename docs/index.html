@@ -11,15 +11,18 @@
   <script src="./scripts/main.js" type="module"></script>
 </head>
 <body>
-  <section class="hero is-small is-info">
+  <section id="hero" class="hero is-small is-info">
     <div class="hero-body">
-      <div class="container has-text-centered">
-        <p class="title">
-          Blueprint Linter
-        </p>
-        <p class="subtitle">
-          Because Yuri the Yeti knows where you live
-        </p>
+      <div class="title-container">
+        <div class="container has-text-centered">
+          <img id="yuri" class="yuri-small" src="./images/yuri.yeti.png" alt="" srcset="">
+          <p class="title">
+            Blueprint Linter
+          </p>
+          <!-- <p class="subtitle">
+            Because Yuri the Yeti knows where you live
+          </p> -->
+        </div>
       </div>
     </div>
   </section>
@@ -33,7 +36,7 @@
       </div>
       <div class="column">
         <p class="timestamp-container">
-          This linter result was generated at: <span id="timestamp"></span>
+          This linter result was generated on: <span id="timestamp"></span>
         </p>
         <table id="result-table" class="table">
           <thead>
@@ -51,5 +54,6 @@
       </div>
     </div>
   </section>
+
 </body>
 </html>

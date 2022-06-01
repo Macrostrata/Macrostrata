@@ -45,10 +45,19 @@ function showBlueprintResult(blueprintResult){
   });
 
   // Add timestamp
-  timestampEl.innerText = DateTime.fromISO(blueprintResult.timestamp).toLocaleString() ;
+  timestampEl.innerText = luxon.DateTime.fromISO(blueprintResult.timestamp).toLocaleString(luxon.DateTime.DATETIME_MED) ;
 }
 
 export default {
+  initiate(){
+    let yuriEl = document.getElementById('yuri');
+    if(!yuriEl) return;
+
+    yuriEl.addEventListener('click', () => {
+      alert('Yuri says "Please fix the errors. I know where you live."');
+    });
+  },
+
   /**
    * Fill the left column with blueprint links
    * @param {Object} blueprints blueprint results data 

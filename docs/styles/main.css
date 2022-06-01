@@ -10,3 +10,25 @@
     color: #eee;
     padding: 5px;
 }
+
+.timestamp-container {
+    background-color: #f8d7bb;
+    padding: 10px;
+    border: 1px solid #bb885e;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#timestamp {
+    font-weight: bold;
+}
+
+.yuri-small {
+    display: float;
+    width: 100px;
+    border-radius: 100%;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    cursor: pointer;
+}

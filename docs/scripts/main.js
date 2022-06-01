@@ -41,6 +41,8 @@ function getBlueprints() {
 }
 
 function init(){
+  view.initiate();
+
   getBlueprints()
   .then(blueprintData => {
     view.fillBlueprintSelector(blueprintData);

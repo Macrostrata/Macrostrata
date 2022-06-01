@@ -1,0 +1,12 @@
+#blueprint-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-snippet {
+    font-size: 0.9em;
+    border: 1px solid #444;
+    background-color: #666;
+    color: #eee;
+    padding: 5px;
+}

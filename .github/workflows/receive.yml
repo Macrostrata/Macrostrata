@@ -6,7 +6,12 @@ jobs:
   receive-resutls:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Event Information
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
           echo "Content: '${{ github.event.client_payload.result }}'"
+          echo '${{ github.event.client_payload.result }}' > result.json
+      - name: Update results file
+        run: |
+          python ./update-blueprint-result.py ${{ github.event.client_payload.repository }} ./result.json ${{ secrets.TOKEN }} 

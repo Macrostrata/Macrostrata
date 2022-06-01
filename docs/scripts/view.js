@@ -1,9 +1,11 @@
 function showBlueprintResult(blueprintResult){
   const resultBodyEl = document.getElementById('result-table-body');
-  if(!resultBodyEl) throw new Error('Result Table not found');
+  const timestampEl = document.getElementById('timestamp');
+  if(!resultBodyEl || !timestampEl) throw new Error('Missing element');
 
   // Clear stuff
   resultBodyEl.replaceChildren(); 
+  timestampEl.innerText = '';
 
   if(!blueprintResult) {
     alert('This blueprint does not have any linter results.');
@@ -42,6 +44,8 @@ function showBlueprintResult(blueprintResult){
     resultBodyEl.innerHTML += rowTmpl;
   });
 
+  // Add timestamp
+  timestampEl.innerText = blueprintResult.timestamp;
 }
 
 export default {

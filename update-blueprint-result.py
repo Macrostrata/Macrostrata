@@ -1,7 +1,7 @@
 import sys
 import json
 
-if sys.argv.count < 4:
+if len(sys.argv) < 4:
     print('Usage: update-blueprint-result.py <blueprint_name> <blueprint_result> <access_token>')
     sys.exit(1)
 

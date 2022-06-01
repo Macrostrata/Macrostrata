@@ -24,16 +24,16 @@ def write_results_to_file(blueprint_results):
     f.close()
 
 # Add blueprint name to blueprint index
-def add_blueprint_to_index(blueprint_name):
+def add_blueprint_to_index(bp_name):
     # First get the existing entries
     f = open(f'./docs/blueprints/index.json', 'r')
     blueprint_entries = json.load(f)
     f.close()
     
     # If not yet in list, write it
-    if blueprint_name not in blueprint_entries:
+    if bp_name not in blueprint_entries:
         f = open(f'./docs/blueprints/index.json', 'w')
-        blueprint_entries.append(blueprint_name)
+        blueprint_entries.append(bp_name)
         blueprint_entries.sort()
         json.dump(blueprint_entries, f)
         f.close()
@@ -42,4 +42,5 @@ def add_blueprint_to_index(blueprint_name):
 if __name__ == '__main__':
     blueprint_results = get_blueprint_results()
     write_results_to_file(blueprint_results)
+    add_blueprint_to_index(blueprint_name)
     print('Updated blueprint results')

@@ -14,7 +14,6 @@ jobs:
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
           echo "Content: '${{ github.event.client_payload.result }}'"
-          echo "hmm: '${{ github.event.client_payload }}'"
           echo '${{ github.event.client_payload.result }}' > result.json
       - name: Update results file
         run: |

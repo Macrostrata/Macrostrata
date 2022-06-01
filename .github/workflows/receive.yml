@@ -13,8 +13,8 @@ jobs:
       - name: Event Information
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
-          echo "Content: '${{ github.event.client_payload.result }}'"
-          echo "${{ github.event.client_payload.result }}" > result.json
+          echo "${{ github.event.client_payload.result }}" | base64 --decode
+          echo "${{ github.event.client_payload.result }}" | base64 --decode > result.json
       - name: Update results file
         run: |
           python ./update-blueprint-result.py ${{ github.event.client_payload.repository }} ./result.json ${{ secrets.TOKEN }} 

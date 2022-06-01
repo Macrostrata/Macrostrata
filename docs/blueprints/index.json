@@ -1,4 +1,1 @@
-[
-    "test-blueprint",
-    "non-existing"
-]
+["agent-monitoring-app-blueprint", "non-existing", "test-blueprint"]

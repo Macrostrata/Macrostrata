@@ -2,7 +2,7 @@ import sys
 import json
 
 if len(sys.argv) < 4:
-    print('Usage: update-blueprint-result.py <blueprint_name> <blueprint_result> <access_token>')
+    print('Usage: update-blueprint-result.py <blueprint_name> <blueprint_results_file> <access_token>')
     sys.exit(1)
 
 blueprint_name = sys.argv[1]

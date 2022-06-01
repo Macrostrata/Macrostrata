@@ -5,7 +5,7 @@ if len(sys.argv) < 4:
     print('Usage: update-blueprint-result.py <blueprint_name> <blueprint_results_file> <access_token>')
     sys.exit(1)
 
-blueprint_name = sys.argv[1]
+blueprint_name = sys.argv[1].split("/")[-1]
 blueprint_results_file = sys.argv[2]
 access_token = sys.argv[3]
 

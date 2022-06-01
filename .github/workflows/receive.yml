@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
       - name: Event Information
         run: |
           echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
@@ -15,3 +18,13 @@ jobs:
       - name: Update results file
         run: |
           python ./update-blueprint-result.py ${{ github.event.client_payload.repository }} ./result.json ${{ secrets.TOKEN }} 
+      - name: Commit files
+        run: |
+          git config --local user.name "blueprint_bot"
+          git add ./docs
+          git commit -m "Adding linter results for ${{ github.event.client_payload.repository }}"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
